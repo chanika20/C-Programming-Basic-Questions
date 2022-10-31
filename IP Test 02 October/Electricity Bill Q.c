@@ -10,8 +10,8 @@ int main(void) {
   float finalBillAmount;
   float additionalCharge;
 
-  // Domestic Customer - 1
-  // Samurdhi Customer - 2
+  printf("Domestic Customer - 1");
+  printf("Samurdhi Customer - 2");
 
   printf("Customer Type (1/2) :");
   scanf("%c", &customerType);
@@ -26,18 +26,18 @@ int main(void) {
     printf("Final Bill Amount : %.2f", finalBillAmount);
   }
 
-  if (customerType == '1' && units > 100) {
+  else if (customerType == '1' && units > 100) {
     finalBillAmount = ((100 * 10) + (units - 100) * 30) *
                       1.2; // + additional surcharge of 20%
     printf("Final Bill Amount : %.2f", finalBillAmount);
   }
   // For Samurdhi Customer
 
-  if (customerType == '2' && units <= 100) {
+  else if (customerType == '2' && units <= 100) {
     finalBillAmount = units * 10;
     printf("Final Bill Amount : %.2f", finalBillAmount);
   }
-  if (customerType == '2' && units > 100) {
+  else if (customerType == '2' && units > 100) {
     finalBillAmount = (units - 100) * 30.00 + (100 * 10);
     printf("Final Bill Amount : %.2f", finalBillAmount);
   }
