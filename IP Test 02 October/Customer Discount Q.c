@@ -10,8 +10,8 @@ int main(void) {
   float discount;
   float finalBillAmount;
 
-  printf("loyaltyCustomer = 1");
-  printf("NonLoyaltyCustomer = 2");
+  printf("loyaltyCustomer = 1\n");
+  printf("NonLoyaltyCustomer = 2\n");
 
   printf("Customer Type (1/2) :");
   scanf("%c", &customerType);
