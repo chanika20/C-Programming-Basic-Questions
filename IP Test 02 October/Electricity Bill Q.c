@@ -10,8 +10,8 @@ int main(void) {
   float finalBillAmount;
   float additionalCharge;
 
-  printf("Domestic Customer - 1");
-  printf("Samurdhi Customer - 2");
+  printf("Domestic Customer - 1\n");
+  printf("Samurdhi Customer - 2\n");
 
   printf("Customer Type (1/2) :");
   scanf("%c", &customerType);
